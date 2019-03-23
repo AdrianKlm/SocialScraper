@@ -1,0 +1,6 @@
+C:\Users\Adrian\Source\Repos\ScraperKariny\FbScraper.Model\bin\Debug\FbScraper.Model.dll
+C:\Users\Adrian\Source\Repos\ScraperKariny\FbScraper.Model\bin\Debug\FbScraper.Model.pdb
+C:\Users\Adrian\Source\Repos\ScraperKariny\FbScraper.Model\obj\Debug\FbScraper.Model.csprojAssemblyReference.cache
+C:\Users\Adrian\Source\Repos\ScraperKariny\FbScraper.Model\obj\Debug\FbScraper.Model.csproj.CoreCompileInputs.cache
+C:\Users\Adrian\Source\Repos\ScraperKariny\FbScraper.Model\obj\Debug\FbScraper.Model.dll
+C:\Users\Adrian\Source\Repos\ScraperKariny\FbScraper.Model\obj\Debug\FbScraper.Model.pdb

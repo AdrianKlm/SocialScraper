@@ -1,0 +1,5 @@
+C:\Users\Adrian\Source\Repos\ScraperKariny\FbScraper.Common\bin\Debug\FbScraper.Common.dll
+C:\Users\Adrian\Source\Repos\ScraperKariny\FbScraper.Common\bin\Debug\FbScraper.Common.pdb
+C:\Users\Adrian\Source\Repos\ScraperKariny\FbScraper.Common\obj\Debug\FbScraper.Common.csproj.CoreCompileInputs.cache
+C:\Users\Adrian\Source\Repos\ScraperKariny\FbScraper.Common\obj\Debug\FbScraper.Common.dll
+C:\Users\Adrian\Source\Repos\ScraperKariny\FbScraper.Common\obj\Debug\FbScraper.Common.pdb
