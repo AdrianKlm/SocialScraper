@@ -146,3 +146,5 @@ C:\Users\Adrian\Source\Repos\KarScraper\KarScraper.Client\obj\Release\KarScraper
 C:\Users\Adrian\Source\Repos\KarScraper\KarScraper.Client\obj\Release\KarScraper.Client.csproj.CopyComplete
 C:\Users\Adrian\Source\Repos\KarScraper\KarScraper.Client\obj\Release\KarScraper.Client.exe
 C:\Users\Adrian\Source\Repos\KarScraper\KarScraper.Client\obj\Release\KarScraper.Client.pdb
+C:\Users\Adrian\Source\Repos\KarScraper\KarScraper.Client\bin\Release\AngleSharp.dll
+C:\Users\Adrian\Source\Repos\KarScraper\KarScraper.Client\bin\Release\AngleSharp.xml
