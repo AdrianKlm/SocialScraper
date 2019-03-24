@@ -1,0 +1,6 @@
+C:\Users\Adrian\Source\Repos\KarScraper\KarScraper.Common\bin\Release\FbScraper.Common.dll
+C:\Users\Adrian\Source\Repos\KarScraper\KarScraper.Common\bin\Release\FbScraper.Common.pdb
+C:\Users\Adrian\Source\Repos\KarScraper\KarScraper.Common\obj\Release\KarScraper.Common.csproj.CoreCompileInputs.cache
+C:\Users\Adrian\Source\Repos\KarScraper\KarScraper.Common\obj\Release\FbScraper.Common.dll
+C:\Users\Adrian\Source\Repos\KarScraper\KarScraper.Common\obj\Release\FbScraper.Common.pdb
+C:\Users\Adrian\Source\Repos\KarScraper\KarScraper.Common\obj\Release\KarScraper.Common.csprojAssemblyReference.cache

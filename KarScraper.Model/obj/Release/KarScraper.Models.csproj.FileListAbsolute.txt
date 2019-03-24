@@ -1,0 +1,9 @@
+C:\Users\Adrian\Source\Repos\KarScraper\KarScraper.Model\bin\Release\FbScraper.Common.dll
+C:\Users\Adrian\Source\Repos\KarScraper\KarScraper.Model\bin\Release\FbScraper.Common.pdb
+C:\Users\Adrian\Source\Repos\KarScraper\KarScraper.Model\obj\Release\KarScraper.Models.csprojAssemblyReference.cache
+C:\Users\Adrian\Source\Repos\KarScraper\KarScraper.Model\obj\Release\KarScraper.Models.csproj.CoreCompileInputs.cache
+C:\Users\Adrian\Source\Repos\KarScraper\KarScraper.Model\obj\Release\KarScraper.Models.csproj.CopyComplete
+C:\Users\Adrian\Source\Repos\KarScraper\KarScraper.Model\bin\Release\FbScraper.Models.dll
+C:\Users\Adrian\Source\Repos\KarScraper\KarScraper.Model\bin\Release\FbScraper.Models.pdb
+C:\Users\Adrian\Source\Repos\KarScraper\KarScraper.Model\obj\Release\FbScraper.Models.dll
+C:\Users\Adrian\Source\Repos\KarScraper\KarScraper.Model\obj\Release\FbScraper.Models.pdb

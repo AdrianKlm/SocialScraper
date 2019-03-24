@@ -1,0 +1,17 @@
+C:\Users\Adrian\Source\Repos\ScraperKariny\FbScraper.Common\bin\Debug\FbScraper.Common.dll
+C:\Users\Adrian\Source\Repos\ScraperKariny\FbScraper.Common\bin\Debug\FbScraper.Common.pdb
+C:\Users\Adrian\Source\Repos\ScraperKariny\FbScraper.Common\obj\Debug\KarScraper.Common.csprojAssemblyReference.cache
+C:\Users\Adrian\Source\Repos\ScraperKariny\FbScraper.Common\obj\Debug\KarScraper.Common.csproj.CoreCompileInputs.cache
+C:\Users\Adrian\Source\Repos\ScraperKariny\FbScraper.Common\obj\Debug\FbScraper.Common.dll
+C:\Users\Adrian\Source\Repos\ScraperKariny\FbScraper.Common\obj\Debug\FbScraper.Common.pdb
+C:\Users\Adrian\Source\Repos\KarScraper\FbScraper.Common\bin\Debug\FbScraper.Common.dll
+C:\Users\Adrian\Source\Repos\KarScraper\FbScraper.Common\bin\Debug\FbScraper.Common.pdb
+C:\Users\Adrian\Source\Repos\KarScraper\FbScraper.Common\obj\Debug\KarScraper.Common.csproj.CoreCompileInputs.cache
+C:\Users\Adrian\Source\Repos\KarScraper\FbScraper.Common\obj\Debug\FbScraper.Common.dll
+C:\Users\Adrian\Source\Repos\KarScraper\FbScraper.Common\obj\Debug\FbScraper.Common.pdb
+C:\Users\Adrian\Source\Repos\KarScraper\FbScraper.Common\obj\Debug\KarScraper.Common.csprojAssemblyReference.cache
+C:\Users\Adrian\Source\Repos\KarScraper\KarScraper.Common\bin\Debug\FbScraper.Common.dll
+C:\Users\Adrian\Source\Repos\KarScraper\KarScraper.Common\bin\Debug\FbScraper.Common.pdb
+C:\Users\Adrian\Source\Repos\KarScraper\KarScraper.Common\obj\Debug\KarScraper.Common.csproj.CoreCompileInputs.cache
+C:\Users\Adrian\Source\Repos\KarScraper\KarScraper.Common\obj\Debug\FbScraper.Common.dll
+C:\Users\Adrian\Source\Repos\KarScraper\KarScraper.Common\obj\Debug\FbScraper.Common.pdb

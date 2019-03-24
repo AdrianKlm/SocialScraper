@@ -394,7 +394,6 @@ C:\Users\Adrian\Source\Repos\KarScraper\KarScraper.Client\bin\Debug\System.Xml.X
 C:\Users\Adrian\Source\Repos\KarScraper\KarScraper.Client\bin\Debug\System.Xml.XPath.dll
 C:\Users\Adrian\Source\Repos\KarScraper\KarScraper.Client\bin\Debug\System.Xml.XPath.XDocument.dll
 C:\Users\Adrian\Source\Repos\KarScraper\KarScraper.Client\bin\Debug\FbScraper.Common.dll
-C:\Users\Adrian\Source\Repos\KarScraper\KarScraper.Client\bin\Debug\FbScraper.Model.dll
 C:\Users\Adrian\Source\Repos\KarScraper\KarScraper.Client\bin\Debug\KarScraperFbApi.dll
 C:\Users\Adrian\Source\Repos\KarScraper\KarScraper.Client\bin\Debug\MaterialDesignColors.dll
 C:\Users\Adrian\Source\Repos\KarScraper\KarScraper.Client\bin\Debug\MaterialDesignThemes.Wpf.dll
@@ -408,7 +407,6 @@ C:\Users\Adrian\Source\Repos\KarScraper\KarScraper.Client\bin\Debug\Microsoft.Wi
 C:\Users\Adrian\Source\Repos\KarScraper\KarScraper.Client\bin\Debug\KarScraperFbApi.pdb
 C:\Users\Adrian\Source\Repos\KarScraper\KarScraper.Client\bin\Debug\KarScraperFbApi.dll.config
 C:\Users\Adrian\Source\Repos\KarScraper\KarScraper.Client\bin\Debug\FbScraper.Common.pdb
-C:\Users\Adrian\Source\Repos\KarScraper\KarScraper.Client\bin\Debug\FbScraper.Model.pdb
 C:\Users\Adrian\Source\Repos\KarScraper\KarScraper.Client\bin\Debug\MaterialDesignThemes.Wpf.pdb
 C:\Users\Adrian\Source\Repos\KarScraper\KarScraper.Client\bin\Debug\MaterialDesignThemes.Wpf.xml
 C:\Users\Adrian\Source\Repos\KarScraper\KarScraper.Client\bin\Debug\Microsoft.Expression.Interactions.xml
@@ -442,3 +440,5 @@ C:\Users\Adrian\Source\Repos\KarScraper\KarScraper.Client\obj\Debug\KarScraper.C
 C:\Users\Adrian\Source\Repos\KarScraper\KarScraper.Client\obj\Debug\KarScraper.Client.csproj.CopyComplete
 C:\Users\Adrian\Source\Repos\KarScraper\KarScraper.Client\obj\Debug\KarScraper.Client.exe
 C:\Users\Adrian\Source\Repos\KarScraper\KarScraper.Client\obj\Debug\KarScraper.Client.pdb
+C:\Users\Adrian\Source\Repos\KarScraper\KarScraper.Client\bin\Debug\FbScraper.Models.dll
+C:\Users\Adrian\Source\Repos\KarScraper\KarScraper.Client\bin\Debug\FbScraper.Models.pdb

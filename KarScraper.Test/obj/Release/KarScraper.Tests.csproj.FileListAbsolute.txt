@@ -1,0 +1,2 @@
+C:\Users\Adrian\Source\Repos\KarScraper\KarScraper.Test\obj\Release\KarScraper.Tests.csprojAssemblyReference.cache
+C:\Users\Adrian\Source\Repos\KarScraper\KarScraper.Test\obj\Release\KarScraper.Tests.csproj.CoreCompileInputs.cache

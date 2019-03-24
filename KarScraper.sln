@@ -5,13 +5,13 @@ VisualStudioVersion = 15.0.28010.2048
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "KarScraper.Client", "KarScraper.Client\KarScraper.Client.csproj", "{6056171A-A52B-40ED-8DCA-1D2EA011ACC2}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "KarScraper.Tests", "FbScraper.Test\KarScraper.Tests.csproj", "{94D141A6-4F15-4020-B55E-164792558EB6}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "KarScraper.Tests", "KarScraper.Test\KarScraper.Tests.csproj", "{94D141A6-4F15-4020-B55E-164792558EB6}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "KarSraper.FbApi", "KarScraper.FbApi\KarSraper.FbApi.csproj", "{79A9B449-7B69-4AB9-B1BD-FA5BD4B5C1E7}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "KarScraper.FbApi", "KarScraper.FbApi\KarScraper.FbApi.csproj", "{79A9B449-7B69-4AB9-B1BD-FA5BD4B5C1E7}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "KarScraper.Models", "FbScraper.Model\KarScraper.Models.csproj", "{F2418C66-D0E5-43C3-AC75-F8DE99C5735A}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "KarScraper.Models", "KarScraper.Model\KarScraper.Models.csproj", "{F2418C66-D0E5-43C3-AC75-F8DE99C5735A}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "KarScraper.Common", "FbScraper.Common\KarScraper.Common.csproj", "{EA0DF6DE-2675-43C9-BA10-7DECD0CE0F6B}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "KarScraper.Common", "KarScraper.Common\KarScraper.Common.csproj", "{EA0DF6DE-2675-43C9-BA10-7DECD0CE0F6B}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

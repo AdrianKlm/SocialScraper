@@ -1,13 +1,8 @@
-﻿using AngleSharp;
-using AngleSharp.Html.Parser;
-using FbScraper.Model;
+﻿using FbScraper.Model;
 using Newtonsoft.Json;
 using System;
 using System.Collections.Generic;
-using System.Linq;
-using System.Net;
 using System.Net.Http;
-using System.Text;
 using System.Threading.Tasks;
 
 namespace FbApi
