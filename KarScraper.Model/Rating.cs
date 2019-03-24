@@ -9,11 +9,12 @@ namespace FbScraper.Model
 {
     public class Rating
     {
-        public string Type { get; set; }
+        public int Lp { get; set; }
         public int DatePublished { get; set; }
+        public string DatePublishedStr { get; set; }
         public DateTime DatePublishedDt
         {
-            get =>  Common.Converters.TimeConverters.UnixTimeStampToDateTime((int)DatePublished);           
+            get => DateTime.MinValue;// Common.Converters.TimeConverters.UnixTimeStampToDateTime((int)DatePublished);           
         }
         public string Description { get; set; }
         public ReviewRating ReviewRating { get; set; }

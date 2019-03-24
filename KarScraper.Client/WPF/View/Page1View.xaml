@@ -13,6 +13,7 @@
              FontFamily="{DynamicResource MaterialDesignFont}"
              xmlns:local="clr-namespace:KarScraper"
              xmlns:localVM="clr-namespace:KarScraper.ViewModel"  
+             xmlns:localBH ="clr-namespace:KarScraper.Common.Behaviors"  
              mc:Ignorable="d" 
              d:DataContext="{d:DesignInstance Type=localVM:Page1ViewModel, IsDesignTimeCreatable=False}" 
              d:DesignHeight="450" d:DesignWidth="800">
@@ -36,10 +37,11 @@
             
             <Button Height="25" Margin="10,0"
                 Content="Pobierz" 
-                Command="{Binding PobierzCommand}" />
+                Command="{Binding DownloadCommand}" />
         </WrapPanel>
         
-        <DataGrid x:Name="dgRatings" 
+        <DataGrid x:Name="dgRatings"     
+                  localBH:DataGridBehavior.StaticLpColumn="True"
             Grid.Row="1" 
             VerticalAlignment="Top"   
             Margin="10,20"
@@ -55,10 +57,29 @@
             Style="{StaticResource CollapsedWhenEmpty}"                  
             ItemsSource="{Binding SrapedRatesList}">      
             <DataGrid.Columns>
+                <DataGridTextColumn Header="Lp." Binding="{Binding Lp}" Width="50" CanUserSort="False"/>
+                <DataGridTextColumn Header="Login" Binding="{Binding Author.Login}" IsReadOnly="False" />
                 <DataGridTextColumn Header="Imie" Binding="{Binding Author.FirstName}" />
                 <DataGridTextColumn Header="Nazwisko" Binding="{Binding Author.LastName}" />
+                <DataGridTextColumn Header="Nazwisko" Binding="{Binding Author.Sex}" />
+
                 <DataGridTextColumn Header="Ocena" Binding="{Binding ReviewRating.RatingValue}" />
-                <DataGridTextColumn Header="Data"  Binding="{Binding DatePublishedDt, StringFormat=dd.MM.yyyy}" />
+                <DataGridTextColumn Header="Data"  Binding="{Binding DatePublishedStr}" />
+                <DataGridTemplateColumn Header="Social Media">
+                    <DataGridTemplateColumn.CellTemplate>
+                        <DataTemplate>
+                            <WrapPanel>
+                                <Button Content="F"  Height="20" Width="20" Padding="3" Margin="5,0"/>
+                                <Button Content="IG" Height="20" Width="20" Padding="3"  Margin="5,0"/>
+                                <Button Content="in" Height="20" Width="20" Padding="3"  Margin="5,0"/>
+
+                            </WrapPanel>
+                        </DataTemplate>
+                    </DataGridTemplateColumn.CellTemplate>
+                </DataGridTemplateColumn>
+
+
+
                 <DataGridTextColumn Width="*" />
 
             </DataGrid.Columns>

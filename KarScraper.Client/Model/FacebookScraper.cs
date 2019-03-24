@@ -8,7 +8,7 @@ using KarScraper.Common;
 
 namespace KarScraper.Model
 {
-    public class FacebookScraper: PropertyChangedNotification
+    public class FbScraper: PropertyChangedNotification
     {
         [Required(ErrorMessage ="Pole wymagane")]
         public string UriSource

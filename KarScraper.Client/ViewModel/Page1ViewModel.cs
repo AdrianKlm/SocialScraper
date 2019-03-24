@@ -10,18 +10,20 @@ using System.Threading.Tasks;
 
 namespace KarScraper.ViewModel
 {
-    public class Page1ViewModel : PropertyChangedNotification
+    public class Page1ViewModel : PropertyChangedNotification, IBaseViewModel
     {
-        public RelayCommand PobierzCommand { get; private set; }
+        #region Commands
+        public RelayCommand DownloadCommand { get; private set; }
+        public RelayCommand OpenLinkCommand { get; private set; }
+        #endregion
 
-        public List<Rating> SrapedRatesList
-        {
-            get { return GetValue(() => SrapedRatesList); }
-            set { SetValue(() => SrapedRatesList, value); }
-        }
+        #region Viewodel prop
+        public List<Rating> SrapedRatesList{ get { return GetValue(() => SrapedRatesList); } set { SetValue(() => SrapedRatesList, value); } }
 
-        public Model.FacebookScraper NewFaceBookScraper { get; set; }
+        public Model.FbScraper NewFaceBookScraper { get; set; }
+
         public int Errors { get; set; }
+        #endregion
 
         private readonly FbApi.FbApi _fbApi;
 
@@ -29,15 +31,21 @@ namespace KarScraper.ViewModel
         {
             _fbApi = new FbApi.FbApi();
 
-            NewFaceBookScraper = new Model.FacebookScraper() {UriSource= "https://www.facebook.com/pg/locale.warszawa/reviews/" };
+            NewFaceBookScraper = new Model.FbScraper() {UriSource= "https://www.facebook.com/pg/locale.warszawa/reviews/" };
             SrapedRatesList = new List<Rating>();
-            PobierzCommand = new RelayCommand(Pobierz, (e) => Errors == 0);
+            DownloadCommand = new RelayCommand(Download, (e) => Errors == 0);
+            OpenLinkCommand = new RelayCommand(OpenLink);
         }
 
-        private async void Pobierz(object obj)
+        private void OpenLink(object obj)
+        {
+
+        }
+
+        private async void Download(object obj)
         {
             string page = await _fbApi.GetPageAsync(NewFaceBookScraper.UriSource);
-            SrapedRatesList = await _fbApi.GetRatesAsync(page);
+            SrapedRatesList = await _fbApi.GetRatesAsyncV2(page);
         }
 
     }

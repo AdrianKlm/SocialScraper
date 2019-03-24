@@ -27,6 +27,18 @@ namespace FbScraper.Test
 
             Assert.IsTrue(res.First().Author.Name.Length>0);
         }
+        [TestMethod]
+        public async Task TestGetRatesAsyncV2Async()
+        {
+            FbApi.FbApi fbApi = new FbApi.FbApi();
+            string page = await fbApi.GetPageAsync("https://www.facebook.com/pg/locale.warszawa/reviews/");
+
+            List<Rating> res = await fbApi.GetRatesAsyncV2(page);
+
+            //TODO
+            Assert.IsTrue(res.First().Author.Name.Length > 0);
+        }
+        
 
     }
 }

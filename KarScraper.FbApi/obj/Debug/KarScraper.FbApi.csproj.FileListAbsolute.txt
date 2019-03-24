@@ -101,12 +101,10 @@ C:\Users\Adrian\Source\Repos\KarScraper\KarScraper.FbApi\bin\Debug\AngleSharp.dl
 C:\Users\Adrian\Source\Repos\KarScraper\KarScraper.FbApi\bin\Debug\Newtonsoft.Json.dll
 C:\Users\Adrian\Source\Repos\KarScraper\KarScraper.FbApi\bin\Debug\System.Runtime.CompilerServices.Unsafe.dll
 C:\Users\Adrian\Source\Repos\KarScraper\KarScraper.FbApi\bin\Debug\System.Text.Encoding.CodePages.dll
-C:\Users\Adrian\Source\Repos\KarScraper\KarScraper.FbApi\bin\Debug\FbScraper.Common.dll
 C:\Users\Adrian\Source\Repos\KarScraper\KarScraper.FbApi\bin\Debug\AngleSharp.xml
 C:\Users\Adrian\Source\Repos\KarScraper\KarScraper.FbApi\bin\Debug\Newtonsoft.Json.pdb
 C:\Users\Adrian\Source\Repos\KarScraper\KarScraper.FbApi\bin\Debug\Newtonsoft.Json.xml
 C:\Users\Adrian\Source\Repos\KarScraper\KarScraper.FbApi\bin\Debug\System.Runtime.CompilerServices.Unsafe.xml
-C:\Users\Adrian\Source\Repos\KarScraper\KarScraper.FbApi\bin\Debug\FbScraper.Common.pdb
 C:\Users\Adrian\Source\Repos\KarScraper\KarScraper.FbApi\obj\Debug\KarScraper.FbApi.csprojAssemblyReference.cache
 C:\Users\Adrian\Source\Repos\KarScraper\KarScraper.FbApi\obj\Debug\KarScraper.FbApi.csproj.CoreCompileInputs.cache
 C:\Users\Adrian\Source\Repos\KarScraper\KarScraper.FbApi\obj\Debug\KarScraper.FbApi.csproj.CopyComplete

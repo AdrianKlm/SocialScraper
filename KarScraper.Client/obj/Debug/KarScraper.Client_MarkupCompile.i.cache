@@ -4,17 +4,17 @@
 winexe
 C#
 .cs
-C:\Users\Adrian\Source\Repos\KarScraper\ScraperKariny\obj\Debug\
+C:\Users\Adrian\Source\Repos\KarScraper\KarScraper.Client\obj\Debug\
 KarScraper
 none
 false
 DEBUG;TRACE
-C:\Users\Adrian\Source\Repos\KarScraper\ScraperKariny\Style\App.xaml
+C:\Users\Adrian\Source\Repos\KarScraper\KarScraper.Client\Style\App.xaml
 51530381370
 
-21-1978094439
-130882051041
+23696384883
+130-773470089
 Style\Overrides.xaml;WPF\MainWindow.xaml;WPF\DataTemplate\DataTemplate.xaml;WPF\View\Page1View.xaml;WPF\View\Page2View.xaml;
 
-True
+False
 

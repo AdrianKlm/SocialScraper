@@ -442,3 +442,5 @@ C:\Users\Adrian\Source\Repos\KarScraper\KarScraper.Client\obj\Debug\KarScraper.C
 C:\Users\Adrian\Source\Repos\KarScraper\KarScraper.Client\obj\Debug\KarScraper.Client.pdb
 C:\Users\Adrian\Source\Repos\KarScraper\KarScraper.Client\bin\Debug\FbScraper.Models.dll
 C:\Users\Adrian\Source\Repos\KarScraper\KarScraper.Client\bin\Debug\FbScraper.Models.pdb
+C:\Users\Adrian\Source\Repos\KarScraper\KarScraper.Client\bin\Debug\AngleSharp.dll
+C:\Users\Adrian\Source\Repos\KarScraper\KarScraper.Client\bin\Debug\AngleSharp.xml

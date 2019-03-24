@@ -75,7 +75,9 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
+    <Compile Include="Common\Behaviors\DataGridBehavior.cs" />
     <Compile Include="Common\Common.cs" />
+    <Compile Include="Common\IBaseViewModel.cs" />
     <Compile Include="Common\PropertyChangeNotification.cs" />
     <Compile Include="Common\RelayCommand.cs" />
     <Compile Include="ViewModel\Page2ViewModel.cs" />
@@ -147,9 +149,7 @@
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="Common\Behaviors\" />
-  </ItemGroup>
+  <ItemGroup />
   <ItemGroup>
     <ProjectReference Include="..\KarScraper.Common\KarScraper.Common.csproj">
       <Project>{ea0df6de-2675-43c9-ba10-7decd0ce0f6b}</Project>
