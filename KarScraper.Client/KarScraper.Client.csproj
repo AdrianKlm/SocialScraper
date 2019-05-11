@@ -80,6 +80,8 @@
     </ApplicationDefinition>
     <Compile Include="Common\Behaviors\DataGridBehavior.cs" />
     <Compile Include="Common\Common.cs" />
+    <Compile Include="Common\ConvertersWpf\IsNullToBoolConverter.cs" />
+    <Compile Include="Common\ConvertersWpf\IsZeroToBoolConverter.cs" />
     <Compile Include="Common\IBaseViewModel.cs" />
     <Compile Include="Common\PropertyChangeNotification.cs" />
     <Compile Include="Common\RelayCommand.cs" />
@@ -163,6 +165,10 @@
     <ProjectReference Include="..\KarScraper.FbApi\KarScraper.FbApi.csproj">
       <Project>{79a9b449-7b69-4ab9-b1bd-fa5bd4b5c1e7}</Project>
       <Name>KarScraper.FbApi</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\KarScraper.InstaApi\KarScraper.InstaApi.csproj">
+      <Project>{ABF7C9A6-FC3A-414B-9296-9394634A5A69}</Project>
+      <Name>KarScraper.InstaApi</Name>
     </ProjectReference>
     <ProjectReference Include="..\KarScraper.Model\KarScraper.Models.csproj">
       <Project>{f2418c66-d0e5-43c3-ac75-f8de99c5735a}</Project>

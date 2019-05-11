@@ -88,8 +88,9 @@ C:\Users\Adrian\Source\Repos\KarScraper\KarScraper.Test\bin\Debug\Microsoft.Visu
 C:\Users\Adrian\Source\Repos\KarScraper\KarScraper.Test\bin\Debug\Microsoft.VisualStudio.TestPlatform.TestFramework.Extensions.xml
 C:\Users\Adrian\Source\Repos\KarScraper\KarScraper.Test\bin\Debug\System.Windows.Interactivity.xml
 C:\Users\Adrian\Source\Repos\KarScraper\KarScraper.Test\bin\Debug\AngleSharp.xml
-C:\Users\Adrian\Source\Repos\KarScraper\KarScraper.Test\bin\Debug\Newtonsoft.Json.pdb
 C:\Users\Adrian\Source\Repos\KarScraper\KarScraper.Test\bin\Debug\Newtonsoft.Json.xml
 C:\Users\Adrian\Source\Repos\KarScraper\KarScraper.Test\obj\Debug\KarScraper.Tests.csproj.CopyComplete
 C:\Users\Adrian\Source\Repos\KarScraper\KarScraper.Test\obj\Debug\FbScraper.Test.dll
 C:\Users\Adrian\Source\Repos\KarScraper\KarScraper.Test\obj\Debug\FbScraper.Test.pdb
+C:\Users\Adrian\Source\Repos\KarScraper\KarScraper.Test\bin\Debug\KarScraper.InstaApi.dll
+C:\Users\Adrian\Source\Repos\KarScraper\KarScraper.Test\bin\Debug\KarScraper.InstaApi.pdb

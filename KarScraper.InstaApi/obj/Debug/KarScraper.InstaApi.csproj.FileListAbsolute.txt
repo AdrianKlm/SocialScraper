@@ -1,0 +1,11 @@
+C:\Users\Adrian\Source\Repos\KarScraper\KarScraper.InstaApi\bin\Debug\KarScraper.InstaApi.dll
+C:\Users\Adrian\Source\Repos\KarScraper\KarScraper.InstaApi\bin\Debug\KarScraper.InstaApi.pdb
+C:\Users\Adrian\Source\Repos\KarScraper\KarScraper.InstaApi\obj\Debug\KarScraper.InstaApi.csprojAssemblyReference.cache
+C:\Users\Adrian\Source\Repos\KarScraper\KarScraper.InstaApi\obj\Debug\KarScraper.InstaApi.csproj.CoreCompileInputs.cache
+C:\Users\Adrian\Source\Repos\KarScraper\KarScraper.InstaApi\obj\Debug\KarScraper.InstaApi.dll
+C:\Users\Adrian\Source\Repos\KarScraper\KarScraper.InstaApi\obj\Debug\KarScraper.InstaApi.pdb
+C:\Users\Adrian\Source\Repos\KarScraper\KarScraper.InstaApi\bin\Debug\FbScraper.Models.dll
+C:\Users\Adrian\Source\Repos\KarScraper\KarScraper.InstaApi\bin\Debug\Newtonsoft.Json.dll
+C:\Users\Adrian\Source\Repos\KarScraper\KarScraper.InstaApi\bin\Debug\FbScraper.Models.pdb
+C:\Users\Adrian\Source\Repos\KarScraper\KarScraper.InstaApi\bin\Debug\Newtonsoft.Json.xml
+C:\Users\Adrian\Source\Repos\KarScraper\KarScraper.InstaApi\obj\Debug\KarScraper.InstaApi.csproj.CopyComplete

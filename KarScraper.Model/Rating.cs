@@ -19,5 +19,7 @@ namespace FbScraper.Model
         public string Description { get; set; }
         public ReviewRating ReviewRating { get; set; }
         public Author Author { get; set; }
+
+        public InstaUser InstaUser { get; set; }
     }
 }

@@ -12,14 +12,18 @@
              Background="{DynamicResource MaterialDesignPaper}"
              FontFamily="{DynamicResource MaterialDesignFont}"
              xmlns:local="clr-namespace:KarScraper"
-             xmlns:localVM="clr-namespace:KarScraper.ViewModel"  
-             xmlns:localBH ="clr-namespace:KarScraper.Common.Behaviors"  
+             xmlns:localVM="clr-namespace:KarScraper.ViewModel"
+             xmlns:conv="clr-namespace:KarScraper.Common.ConvertersWpf"
+             xmlns:localBH ="clr-namespace:KarScraper.Common.Behaviors" 
              mc:Ignorable="d" 
              d:DataContext="{d:DesignInstance Type=localVM:Page1ViewModel, IsDesignTimeCreatable=False}" 
              d:DesignHeight="450" d:DesignWidth="800">
     <UserControl.Resources>
         <ResourceDictionary>
-            <!--<converters:IntToDateTimeConverter x:Key="intToDateTimeConverters"/>-->
+            <conv:IsNullToBoolConverter x:Key="IsNullToBoolConverter"/>
+            <conv:IsZeroToBoolConverter x:Key="IsZeroToBoolConverter"/>
+            <BooleanToVisibilityConverter x:Key="BooleanToVisibilityConverter"/>
+
         </ResourceDictionary>
     </UserControl.Resources>
     <Grid>
@@ -27,24 +31,68 @@
             <RowDefinition Height="auto"/>
             <RowDefinition Height="*"/>
         </Grid.RowDefinitions>
-        <WrapPanel Grid.Row="0" VerticalAlignment="Top">
-            <TextBlock Margin="5,10,5,5" 
-                       Text="Link do strony" />
-            
-            <TextBox Margin="5" Width="450"
-                Text="{Binding NewFaceBookScraper.UriSource, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged, ValidatesOnDataErrors=True,NotifyOnValidationError=True}"  
-                Validation.Error="Validation_Error" />
-            
-            <Button Height="25" Margin="10,0"
-                Content="Pobierz" 
-                Command="{Binding DownloadCommand}" />
-        </WrapPanel>
+        <StackPanel Grid.Row="0" Margin="10" VerticalAlignment="Top">
+            <WrapPanel>
+                <TextBlock Margin="5,10,5,5" Text="Link do strony" />
+                <TextBox Margin="5" Width="450" Text="{Binding NewFaceBookScraper.UriSource, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged, ValidatesOnDataErrors=True,NotifyOnValidationError=True}"  Validation.Error="Validation_Error" />
+                <Button Height="25" Margin="10,0" Content="Pobierz" Command="{Binding DownloadCommand}" />
+            </WrapPanel>
+            <GroupBox Header="Statystyki" Visibility="{Binding StatsVisibility, Converter={StaticResource BooleanToVisibilityConverter}}"
+                      Style="{DynamicResource MaterialDesignGroupBox}"
+                      Margin="0,10"
+                      md:ShadowAssist.ShadowDepth="Depth3">
+                <Grid DataContext="{Binding Statistic}">
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="auto"/>
+                        <RowDefinition Height="auto"/>
+                        <RowDefinition Height="auto"/>
+                    </Grid.RowDefinitions>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="auto"/>
+                        <ColumnDefinition Width="auto"/>
+                        <ColumnDefinition Width="auto"/>
+                        <ColumnDefinition Width="auto"/>
+                    </Grid.ColumnDefinitions>
+                    <WrapPanel Grid.Column="0" Grid.Row="0"  Margin="20,0">
+                        <Label Content="L. wyszukań:" />
+                        <Label Content="{Binding NumberOfRates}"/>
+                    </WrapPanel>
+
+                    <WrapPanel Grid.Column="0" Grid.Row="1"  Margin="20,0">
+                        <Label Content="Średnia ocena:" />
+                        <Label Content="{Binding AverageRates}"/>
+                    </WrapPanel>
+
+                    <WrapPanel Grid.Column="1" Grid.Row="0" Margin="20,0">
+                        <Label Content="L. mężczyzn:" />
+                        <Label Content="{Binding NumberOfMan}"/>
+                    </WrapPanel>
+                    <WrapPanel Grid.Column="1" Grid.Row="1"  Margin="20,0">
+                        <Label Content="L. kobiet:" />
+                        <Label Content="{Binding NumberOfFemale}"/>
+                    </WrapPanel>
+                    <WrapPanel Grid.Column="2" Grid.Row="0"  Margin="20,0">
+                        <Label Content="L. dopasowanych kont IG:" />
+                        <Label Content="{Binding NumberOfIgAccount}"/>
+                    </WrapPanel>
+                    <WrapPanel Grid.Column="2" Grid.Row="1"  Margin="20,0">
+                        <Label Content="L. dopasowanych kont in:" />
+                        <Label Content="{Binding NumberOfInAccount}"/>
+                    </WrapPanel>
+
+                </Grid> 
+            </GroupBox>
+        </StackPanel>  
+
+        <ProgressBar Grid.Row="1" Margin="10,50" VerticalAlignment="Top" 
+                     IsIndeterminate="{Binding PrograssBarIsIndeterminate}"  
+                     Visibility="{Binding PrograssBarIsIndeterminate, Converter={StaticResource BooleanToVisibilityConverter}}" />
         
         <DataGrid x:Name="dgRatings"     
-                  localBH:DataGridBehavior.StaticLpColumn="True"
+            localBH:DataGridBehavior.StaticLpColumn="True"
             Grid.Row="1" 
             VerticalAlignment="Top"   
-            Margin="10,20"
+            Margin="10,-20"
             IsReadOnly="True"
             SelectionMode="Single"                   
             CanUserDeleteRows="False"
@@ -61,25 +109,26 @@
                 <DataGridTextColumn Header="Login" Binding="{Binding Author.Login}" IsReadOnly="False" />
                 <DataGridTextColumn Header="Imie" Binding="{Binding Author.FirstName}" />
                 <DataGridTextColumn Header="Nazwisko" Binding="{Binding Author.LastName}" />
-                <DataGridTextColumn Header="Nazwisko" Binding="{Binding Author.Sex}" />
-
+                <DataGridTextColumn Header="Płeć" Binding="{Binding Author.Sex}" />
                 <DataGridTextColumn Header="Ocena" Binding="{Binding ReviewRating.RatingValue}" />
                 <DataGridTextColumn Header="Data"  Binding="{Binding DatePublishedStr}" />
                 <DataGridTemplateColumn Header="Social Media">
                     <DataGridTemplateColumn.CellTemplate>
                         <DataTemplate>
                             <WrapPanel>
-                                <Button Content="F"  Height="20" Width="20" Padding="3" Margin="5,0"/>
-                                <Button Content="IG" Height="20" Width="20" Padding="3"  Margin="5,0"/>
-                                <Button Content="in" Height="20" Width="20" Padding="3"  Margin="5,0"/>
-
+                                <Button Content="F"  Height="20" Width="20" Padding="3" Margin="5,0" 
+                                        Command="{Binding RelativeSource={RelativeSource FindAncestor, AncestorType={x:Type UserControl}}, Path=DataContext.OpenFbCommand}" 
+                                        CommandParameter="{Binding}"/>
+                                <Button Content="IG" Height="20" Width="20" Padding="3"  Margin="5,0" 
+                                        IsEnabled="{Binding InstaUser, Converter={StaticResource IsNullToBoolConverter}}" 
+                                        Command="{Binding RelativeSource={RelativeSource FindAncestor, AncestorType={x:Type UserControl}}, Path=DataContext.OpenInstaCommand}" 
+                                        CommandParameter="{Binding}" />
+                                <Button Content="in" Height="20" Width="20" Padding="3"  Margin="5,0" IsEnabled="False"/>
                             </WrapPanel>
                         </DataTemplate>
                     </DataGridTemplateColumn.CellTemplate>
                 </DataGridTemplateColumn>
-
-
-
+                
                 <DataGridTextColumn Width="*" />
 
             </DataGrid.Columns>

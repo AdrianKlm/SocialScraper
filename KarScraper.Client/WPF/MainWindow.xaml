@@ -33,7 +33,7 @@
             <StackPanel>
                 <TextBlock Text="MENU" Margin="5" HorizontalAlignment="Center"/>
                 <Button Content="Facebook" Margin="5" Command="{Binding NavPage1Command}"/>
-                <Button Content="Page 2" Margin="5" Command="{Binding NavPage2Command}"/>
+                <Button Content=" " Margin="5" Command="{Binding NavPage2Command}"/>
             </StackPanel>
         </md:Card>
         

@@ -13,6 +13,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "KarScraper.Models", "KarScr
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "KarScraper.Common", "KarScraper.Common\KarScraper.Common.csproj", "{EA0DF6DE-2675-43C9-BA10-7DECD0CE0F6B}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "KarScraper.InstaApi", "KarScraper.InstaApi\KarScraper.InstaApi.csproj", "{ABF7C9A6-FC3A-414B-9296-9394634A5A69}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -39,6 +41,10 @@ Global
 		{EA0DF6DE-2675-43C9-BA10-7DECD0CE0F6B}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{EA0DF6DE-2675-43C9-BA10-7DECD0CE0F6B}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{EA0DF6DE-2675-43C9-BA10-7DECD0CE0F6B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{ABF7C9A6-FC3A-414B-9296-9394634A5A69}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{ABF7C9A6-FC3A-414B-9296-9394634A5A69}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{ABF7C9A6-FC3A-414B-9296-9394634A5A69}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{ABF7C9A6-FC3A-414B-9296-9394634A5A69}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

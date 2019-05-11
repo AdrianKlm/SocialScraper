@@ -51,6 +51,7 @@
   <ItemGroup>
     <Compile Include="TestFbApi.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="TestInstaAPI.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="app.config" />
@@ -68,6 +69,10 @@
     <ProjectReference Include="..\KarScraper.FbApi\KarScraper.FbApi.csproj">
       <Project>{79a9b449-7b69-4ab9-b1bd-fa5bd4b5c1e7}</Project>
       <Name>KarScraper.FbApi</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\KarScraper.InstaApi\KarScraper.InstaApi.csproj">
+      <Project>{abf7c9a6-fc3a-414b-9296-9394634a5a69}</Project>
+      <Name>KarScraper.InstaApi</Name>
     </ProjectReference>
     <ProjectReference Include="..\KarScraper.Model\KarScraper.Models.csproj">
       <Project>{f2418c66-d0e5-43c3-ac75-f8de99c5735a}</Project>

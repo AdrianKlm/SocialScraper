@@ -5084,31 +5084,6 @@
             elements associated to this element.
             </summary>
         </member>
-        <member name="T:AngleSharp.Dom.Html.IHtmlMarqueeElement">
-            <summary>
-            Used to declare properties for the marquee element.
-            </summary>
-        </member>
-        <member name="P:AngleSharp.Dom.Html.IHtmlMarqueeElement.MinimumDelay">
-            <summary>
-            Gets the minimum delay in ms.
-            </summary>
-        </member>
-        <member name="P:AngleSharp.Dom.Html.IHtmlMarqueeElement.ScrollAmount">
-            <summary>
-            Gets or sets the amount of scrolling in pixels.
-            </summary>
-        </member>
-        <member name="P:AngleSharp.Dom.Html.IHtmlMarqueeElement.ScrollDelay">
-            <summary>
-            Gets or sets the delay of scrolling in ms.
-            </summary>
-        </member>
-        <member name="P:AngleSharp.Dom.Html.IHtmlMarqueeElement.Loop">
-            <summary>
-            Gets or sets the loop number.
-            </summary>
-        </member>
         <member name="T:AngleSharp.Dom.Html.IHtmlMediaElement">
             <summary>
             Represents the base for all HTML media elements.
@@ -32918,13 +32893,12 @@
             The default (ready-to-use) HTTP requester.
             </summary>
         </member>
-        <member name="M:AngleSharp.Network.Default.HttpRequester.#ctor(System.String,System.Action{System.Net.HttpWebRequest})">
+        <member name="M:AngleSharp.Network.Default.HttpRequester.#ctor(System.String)">
             <summary>
             Constructs a default HTTP requester with the information presented
             in the info object.
             </summary>
             <param name="userAgent">The user-agent name to use, if any.</param>
-            <param name="setup">An optional setup function for the HttpWebRequest object.</param>
         </member>
         <member name="P:AngleSharp.Network.Default.HttpRequester.Headers">
             <summary>

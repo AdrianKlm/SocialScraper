@@ -1,28 +1,45 @@
 ﻿
 
+using AngleSharp;
+
 using AngleSharp.Parser.Html;
+//using AngleSharp.Dom.Html;
+//using AngleSharp.Parser.Html;
 using FbScraper.Model;
 using Newtonsoft.Json;
 using System;
 using System.Collections.Generic;
+using System.Collections.Specialized;
+using System.IO;
 using System.Linq;
+using System.Net;
 using System.Net.Http;
+using System.Text;
 using System.Threading.Tasks;
 
 
 namespace FbApi
 {
+
     public class FbApi
     {
         private HttpClient _client;
         public FbApi()
         {
             _client = new HttpClient();
+            //_client.DefaultRequestHeaders.Add("Accept-Encoding", "gzip, deflate");
+            //_client.DefaultRequestHeaders.Add("Accept-Language", "en-US,en;q=0.5");
+            //_client.DefaultRequestHeaders.Add("User-Agent", "Mozilla/5.0 (compatible; Googlebot/2.1; +http://www.google.com/bot.html)");
+            //_client.DefaultRequestHeaders.Add("Accept", "text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8");
+
+
             _client.DefaultRequestHeaders.UserAgent.ParseAdd(
-               //Html Data
+                //Html Data
                 "Mozilla/5.0 (PlayStation 4 5.03) AppleWebKit/601.2 (KHTML, like Gecko)");
-               //json data
-               //"Mozilla/5.0 (Linux; Android 6.0.1; SM-G935S Build/MMB29K; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/55.0.2883.91 Mobile Safari/537.36");
+                //"Googlebot/2.1 (+http://www.google.com/bot.html)");
+            //json data
+            //"Mozilla/5.0 (Linux; Android 6.0.1; SM-G935S Build/MMB29K; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/55.0.2883.91 Mobile Safari/537.36");
+
         }
 
 
@@ -33,6 +50,7 @@ namespace FbApi
         /// <returns></returns>
         public async Task<string> GetPageAsync(string url)
         {
+           // await LogiFacebook();
             string res = String.Empty;
             try
             {
@@ -47,12 +65,9 @@ namespace FbApi
             }
             return res;
         }
+   
 
-        /// <summary>
-        /// Get all rates
-        /// </summary>
-        /// <param name="page"></param>
-        /// <returns></returns>
+        
         public async Task<List<Rating>> GetRatesAsync(string page)
         {
             List<Rating> res = null;
@@ -82,7 +97,11 @@ namespace FbApi
 
         }
 
-
+        /// <summary>
+        /// Get all rates
+        /// </summary>
+        /// <param name="page"></param>
+        /// <returns></returns>
         public async Task<List<Rating>> GetRatesAsyncV2(string page)
         {
             List<Rating> res = new List<Rating>();
@@ -142,10 +161,17 @@ namespace FbApi
 
         }
 
+     
+    //           try
+    //        {
+    //            page = page.Remove(0, page.IndexOf("[{\""));
+    //            page = page.Remove(page.IndexOf("}</script><link"));
 
+    //            res = await Task.Run(()=>  JsonConvert.DeserializeObject<List<Rating>>(page));
 
+    //}
 
-    }
+}
 }
 
 
