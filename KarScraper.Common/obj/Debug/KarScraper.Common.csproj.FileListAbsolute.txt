@@ -15,3 +15,4 @@ C:\Users\Adrian\Source\Repos\KarScraper\KarScraper.Common\bin\Debug\FbScraper.Co
 C:\Users\Adrian\Source\Repos\KarScraper\KarScraper.Common\obj\Debug\KarScraper.Common.csproj.CoreCompileInputs.cache
 C:\Users\Adrian\Source\Repos\KarScraper\KarScraper.Common\obj\Debug\FbScraper.Common.dll
 C:\Users\Adrian\Source\Repos\KarScraper\KarScraper.Common\obj\Debug\FbScraper.Common.pdb
+C:\Users\Adrian\Source\Repos\KarScraper\KarScraper.Common\obj\Debug\KarScraper.Common.csprojAssemblyReference.cache

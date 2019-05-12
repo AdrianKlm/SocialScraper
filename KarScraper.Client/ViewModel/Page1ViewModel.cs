@@ -1,4 +1,5 @@
 ﻿using FbApi;
+using FbScraper.Common.Generator;
 using FbScraper.Model;
 using KarScraper.Common;
 using KarScraper.InstaApi;
@@ -7,7 +8,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-
+using System.Windows;
 
 namespace KarScraper.ViewModel
 {
@@ -56,29 +57,48 @@ namespace KarScraper.ViewModel
 
         private async void Download(object obj)
         {
-            SrapedRatesList = new List<Rating>();
-            PrograssBarIsIndeterminate = true;
-            StatsVisibility = false;
-
-
-            string page = await _fbApi.GetPageAsync(NewFaceBookScraper.UriSource);
             var _temp = new List<Rating>();
 
-            _temp = await _fbApi.GetRatesAsyncV2(page);
-
-            foreach (var item in _temp)
+            try
             {
-                string instaPage = await _instaApi.GetPageAsync("https://www.instagram.com/" + item.Author.Login);
-                if (!instaPage.Contains("Sorry, this page"))
-                {
-                    item.InstaUser = await _instaApi.GetUserInfoAsync(instaPage);
-                }
-            }
-            SrapedRatesList = _temp;
-            PrograssBarIsIndeterminate = false;
-            StatsVisibility = true;
 
-            Statistic = GenerateStatistic(_temp);
+
+                SrapedRatesList = new List<Rating>();
+                PrograssBarIsIndeterminate = true;
+                StatsVisibility = false;
+
+                NewFaceBookScraper.BussinesName = FbUriGenerator.ExtractName(NewFaceBookScraper.UriSource);
+
+                NewFaceBookScraper.UriSource = FbUriGenerator.Generate(NewFaceBookScraper.UriSource);
+
+                string page = await _fbApi.GetPageAsync(NewFaceBookScraper.UriSource);
+
+                _temp = await _fbApi.GetRatesAsyncV2(page);
+
+                foreach (var item in _temp)
+                {
+                    string instaPage = await _instaApi.GetPageAsync("https://www.instagram.com/" + item.Author.Login);
+                    if (!instaPage.Contains("Sorry, this page"))
+                    {
+                        item.InstaUser = await _instaApi.GetUserInfoAsync(instaPage);
+                    }
+                }
+                SrapedRatesList = _temp;
+                PrograssBarIsIndeterminate = false;
+                StatsVisibility = true;
+                Statistic = GenerateStatistic(_temp);
+            }
+            catch(Exception ex)
+            {               
+                NewFaceBookScraper.UriSource = "";
+                MessageBox.Show(ex.Message);
+                PrograssBarIsIndeterminate = false;
+                StatsVisibility = false;
+            }
+            finally
+            {
+            
+            }
         }
 
         private Statistic GenerateStatistic(List<Rating> rateslist)
