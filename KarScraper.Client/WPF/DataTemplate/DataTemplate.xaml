@@ -5,13 +5,18 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:md="http://materialdesigninxaml.net/winfx/xaml/themes"
         xmlns:localVM="clr-namespace:KarScraper.ViewModel"        
-        xmlns:local="clr-namespace:KarScraper">
+        xmlns:local="clr-namespace:KarScraper"
+        xmlns:views="clr-namespace:KarScraper.WPF.View"                    
+     >
 
     <DataTemplate DataType="{x:Type localVM:Page1ViewModel}">
         <local:Page1View/>
     </DataTemplate>
     <DataTemplate DataType="{x:Type localVM:Page2ViewModel}">
         <local:Page2View/>
+    </DataTemplate>
+    <DataTemplate DataType="{x:Type localVM:ComparerViewModel}">
+        <views:ComparerView/>
     </DataTemplate>
 
 

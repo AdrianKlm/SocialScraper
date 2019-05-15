@@ -127,7 +127,6 @@ C:\Users\Adrian\Source\Repos\KarScraper\KarScraper.Client\bin\Release\MaterialDe
 C:\Users\Adrian\Source\Repos\KarScraper\KarScraper.Client\bin\Release\Microsoft.Expression.Interactions.xml
 C:\Users\Adrian\Source\Repos\KarScraper\KarScraper.Client\bin\Release\System.Runtime.CompilerServices.Unsafe.xml
 C:\Users\Adrian\Source\Repos\KarScraper\KarScraper.Client\bin\Release\System.Windows.Interactivity.xml
-C:\Users\Adrian\Source\Repos\KarScraper\KarScraper.Client\bin\Release\Newtonsoft.Json.pdb
 C:\Users\Adrian\Source\Repos\KarScraper\KarScraper.Client\bin\Release\Newtonsoft.Json.xml
 C:\Users\Adrian\Source\Repos\KarScraper\KarScraper.Client\bin\Release\en\Microsoft.Windows.Design.Interaction.resources.dll
 C:\Users\Adrian\Source\Repos\KarScraper\KarScraper.Client\bin\Release\pl\Microsoft.Windows.Design.Interaction.resources.dll
@@ -148,3 +147,5 @@ C:\Users\Adrian\Source\Repos\KarScraper\KarScraper.Client\obj\Release\KarScraper
 C:\Users\Adrian\Source\Repos\KarScraper\KarScraper.Client\obj\Release\KarScraper.Client.pdb
 C:\Users\Adrian\Source\Repos\KarScraper\KarScraper.Client\bin\Release\AngleSharp.dll
 C:\Users\Adrian\Source\Repos\KarScraper\KarScraper.Client\bin\Release\AngleSharp.xml
+C:\Users\Adrian\Source\Repos\KarScraper\KarScraper.Client\bin\Release\KarScraper.InstaApi.dll
+C:\Users\Adrian\Source\Repos\KarScraper\KarScraper.Client\bin\Release\KarScraper.InstaApi.pdb

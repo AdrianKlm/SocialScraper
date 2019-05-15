@@ -14,6 +14,7 @@ namespace FbScraper.Model
         public int NumberOfFemale { get; set; }
         public int NumberOfIgAccount { get; set; }
         public int NumberOfInAccount { get; set; }
+        public string BussinesName { get; set; }
 
 
 

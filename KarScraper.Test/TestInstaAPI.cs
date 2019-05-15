@@ -17,7 +17,7 @@ namespace FbScraper.Test
         public async Task GetPageAsyncTest()
         {
             IntaApi instaApi = new IntaApi();
-            string res = await instaApi.GetPageAsync("https://www.instagram.com/ffdsfs/");
+            string res = await instaApi.GetPageAsync("https://www.instagram.com/zdjeciazkomorki/");
 
             Assert.IsTrue(res.Length > 0 && res.Contains("zdjeciazkomorki"));
         }

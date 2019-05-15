@@ -445,3 +445,5 @@ C:\Users\Adrian\Source\Repos\KarScraper\KarScraper.Client\bin\Debug\AngleSharp.d
 C:\Users\Adrian\Source\Repos\KarScraper\KarScraper.Client\bin\Debug\AngleSharp.xml
 C:\Users\Adrian\Source\Repos\KarScraper\KarScraper.Client\bin\Debug\KarScraper.InstaApi.dll
 C:\Users\Adrian\Source\Repos\KarScraper\KarScraper.Client\bin\Debug\KarScraper.InstaApi.pdb
+C:\Users\Adrian\Source\Repos\KarScraper\KarScraper.Client\obj\Debug\WPF\View\ComparerView.g.cs
+C:\Users\Adrian\Source\Repos\KarScraper\KarScraper.Client\obj\Debug\WPF\View\ComparerView.baml

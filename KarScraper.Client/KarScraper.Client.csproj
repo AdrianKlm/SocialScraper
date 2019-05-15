@@ -85,11 +85,15 @@
     <Compile Include="Common\IBaseViewModel.cs" />
     <Compile Include="Common\PropertyChangeNotification.cs" />
     <Compile Include="Common\RelayCommand.cs" />
+    <Compile Include="ViewModel\ComparerViewModel.cs" />
     <Compile Include="ViewModel\Page2ViewModel.cs" />
     <Compile Include="ViewModel\ViewModelLocator.cs" />
     <Compile Include="Model\FacebookScraper.cs" />
     <Compile Include="ViewModel\Page1ViewModel.cs" />
     <Compile Include="ViewModel\MainWindowViewModel.cs" />
+    <Compile Include="WPF\View\ComparerView.xaml.cs">
+      <DependentUpon>ComparerView.xaml</DependentUpon>
+    </Compile>
     <Compile Include="WPF\View\Page1View.xaml.cs">
       <DependentUpon>Page1View.xaml</DependentUpon>
     </Compile>
@@ -115,6 +119,10 @@
       <SubType>Code</SubType>
     </Compile>
     <Page Include="WPF\DataTemplate\DataTemplate.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="WPF\View\ComparerView.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>

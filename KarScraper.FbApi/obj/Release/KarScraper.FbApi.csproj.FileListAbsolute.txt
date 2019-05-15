@@ -102,7 +102,6 @@ C:\Users\Adrian\Source\Repos\KarScraper\KarScraper.FbApi\bin\Release\Newtonsoft.
 C:\Users\Adrian\Source\Repos\KarScraper\KarScraper.FbApi\bin\Release\System.Runtime.CompilerServices.Unsafe.dll
 C:\Users\Adrian\Source\Repos\KarScraper\KarScraper.FbApi\bin\Release\System.Text.Encoding.CodePages.dll
 C:\Users\Adrian\Source\Repos\KarScraper\KarScraper.FbApi\bin\Release\AngleSharp.xml
-C:\Users\Adrian\Source\Repos\KarScraper\KarScraper.FbApi\bin\Release\Newtonsoft.Json.pdb
 C:\Users\Adrian\Source\Repos\KarScraper\KarScraper.FbApi\bin\Release\Newtonsoft.Json.xml
 C:\Users\Adrian\Source\Repos\KarScraper\KarScraper.FbApi\bin\Release\System.Runtime.CompilerServices.Unsafe.xml
 C:\Users\Adrian\Source\Repos\KarScraper\KarScraper.FbApi\obj\Release\KarScraper.FbApi.csprojAssemblyReference.cache

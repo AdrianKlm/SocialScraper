@@ -12,7 +12,7 @@ using System.Windows;
 
 namespace KarScraper.ViewModel
 {
-    public class Page1ViewModel : PropertyChangedNotification, IBaseViewModel
+    public class Page1ViewModel: PropertyChangedNotification,  IBaseViewModel
     {
         #region Commands
         public RelayCommand DownloadCommand { get; private set; }
@@ -24,7 +24,7 @@ namespace KarScraper.ViewModel
         #region Viewodel prop
         public List<Rating> SrapedRatesList { get { return GetValue(() => SrapedRatesList); } set { SetValue(() => SrapedRatesList, value); } }
 
-        public Model.FbScraper NewFaceBookScraper { get; set; }
+        public Model.FbScraper NewFaceBookScraper { get; private set; }
 
         public bool PrograssBarIsIndeterminate { get { return GetValue(() => PrograssBarIsIndeterminate); } set { SetValue(() => PrograssBarIsIndeterminate, value); } }
 
@@ -34,16 +34,18 @@ namespace KarScraper.ViewModel
 
 
         public int Errors { get; set; }
+        public string Content { get { return GetValue(() =>Content); ; } set { SetValue(() => Content, value); } }
         #endregion
 
         private readonly FbApi.FbApi _fbApi;
         private readonly IntaApi _instaApi;
 
         public Page1ViewModel()
-        {
+        {      
             _fbApi = new FbApi.FbApi();
             _instaApi = new IntaApi();
             Statistic = new Statistic();
+            Content = "Wyszukiwanie";
             PrograssBarIsIndeterminate = false;
             StatsVisibility = false;
             NewFaceBookScraper = new Model.FbScraper() { UriSource = "https://www.facebook.com/pg/locale.warszawa/reviews/" };
@@ -61,13 +63,12 @@ namespace KarScraper.ViewModel
 
             try
             {
-
-
                 SrapedRatesList = new List<Rating>();
                 PrograssBarIsIndeterminate = true;
                 StatsVisibility = false;
 
                 NewFaceBookScraper.BussinesName = FbUriGenerator.ExtractName(NewFaceBookScraper.UriSource);
+                Content = NewFaceBookScraper.BussinesName;
 
                 NewFaceBookScraper.UriSource = FbUriGenerator.Generate(NewFaceBookScraper.UriSource);
 
@@ -110,6 +111,7 @@ namespace KarScraper.ViewModel
                 NumberOfFemale = rateslist.Where(x => x.Author.Sex == 'K').Count(),
                 NumberOfMan = rateslist.Where(x => x.Author.Sex == 'M').Count(),
                 NumberOfIgAccount = rateslist.Where(x => x.InstaUser != null).Count(),
+                BussinesName = NewFaceBookScraper.BussinesName//TODO
                 //NumberOfInAccount = rateslist.Select(x => Int64.Parse(x.InstaUser.user?.id) > 10).Count()
 
 
