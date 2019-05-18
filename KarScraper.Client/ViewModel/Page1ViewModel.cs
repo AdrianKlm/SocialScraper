@@ -76,14 +76,14 @@ namespace KarScraper.ViewModel
 
                 _temp = await _fbApi.GetRatesAsyncV2(page);
 
-                foreach (var item in _temp)
-                {
-                    string instaPage = await _instaApi.GetPageAsync("https://www.instagram.com/" + item.Author.Login);
-                    if (!instaPage.Contains("Sorry, this page"))
-                    {
-                        item.InstaUser = await _instaApi.GetUserInfoAsync(instaPage);
-                    }
-                }
+                //foreach (var item in _temp)
+                //{
+                //    string instaPage = await _instaApi.GetPageAsync("https://www.instagram.com/" + item.Author.Login);
+                //    if (!instaPage.Contains("Sorry, this page"))
+                //    {
+                //        item.InstaUser = await _instaApi.GetUserInfoAsync(instaPage);
+                //    }
+                //}
                 SrapedRatesList = _temp;
                 PrograssBarIsIndeterminate = false;
                 StatsVisibility = true;
