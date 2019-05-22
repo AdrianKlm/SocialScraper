@@ -15,49 +15,39 @@ namespace KarScraper.ViewModel
         public RelayCommand NavigateToCommand { get; private set; }
         public RelayCommand DeleteViewModelCommand { get; private set; }
 
-        public RelayCommand NewViewModelCommand { get; private set; }
+        public RelayCommand NewSearchCommand { get; private set; }
         public RelayCommand CompareCommand { get; private set; }
-
         #endregion
+
+        #region Prop
+        public ObservableCollection<BaseViewModelListModel> ViewModels { get; private set; }
 
         public object SelectedViewModel
         {
             get { return GetValue(() => SelectedViewModel); }
             set { SetValue(() => SelectedViewModel, value); }
         }
-
-        public ObservableCollection<BaseViewModelListModel> ViewModels { get; private set; }
+        #endregion
 
         public MainWindowViewModel()
         {
             NavigateToCommand = new RelayCommand((e)=> SelectedViewModel = (e as BaseViewModelListModel).ViewModel, (e)=> e is BaseViewModelListModel);
             DeleteViewModelCommand = new RelayCommand((e) => ViewModels.Remove(e as BaseViewModelListModel), (e) => e is BaseViewModelListModel);
 
-            NewViewModelCommand = new RelayCommand(NewViewModelAction);
-            CompareCommand = new RelayCommand(CompareAction);
-            //, (e)=>(ViewModels.Select(x=>x.Checked).Count==2)
+            NewSearchCommand = new RelayCommand(NewSearchAction);
+            CompareCommand = new RelayCommand(CompareAction, (e) => (ViewModels.Where(x => x.Checked).ToList().Count > 1));
             ViewModels = new ObservableCollection<BaseViewModelListModel>
             {
                 new BaseViewModelListModel(){ViewModel = new Page1ViewModel()}
             };
-            //NavPage1Command = new RelayCommand((e)=> SelectedViewModel = ViewModelLocator.FacebookScraperViewModel);
-            //NavPage2Command = new RelayCommand((e) => SelectedViewModel = ViewModelLocator.PageTwoViewModel);
         }
-        private void NewViewModelAction(object obj)
+
+        private void NewSearchAction(object obj)
         {
             var temp = new ViewModel.Page1ViewModel();
             ViewModels.Add(new BaseViewModelListModel() { ViewModel = temp});
-            //SelectedViewModel = temp;
+            SelectedViewModel = temp;
         }
-
-        private void CompareAction(object obj)
-        {
-            SelectedViewModel = new ComparerViewModel(new List<BaseViewModelListModel>(ViewModels.Where(x => x.Checked)));
-        }
-    }
-    public class BaseViewModelListModel
-    {
-        public IBaseViewModel ViewModel { get;  set; }
-        public bool Checked { get; set; }
+        private void CompareAction(object obj) => SelectedViewModel = new ComparerViewModel(new List<BaseViewModelListModel>(ViewModels.Where(x => x.Checked)));
     }
 }

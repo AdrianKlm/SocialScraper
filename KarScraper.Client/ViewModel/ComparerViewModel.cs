@@ -13,6 +13,7 @@ namespace KarScraper.ViewModel
         public ObservableCollection<Statistic> CompareList { get; private set; }
         public ObservableCollection<Rating> MatchedList { get; private set; }
 
+        public bool Visibility { get; set; }
 
 
         public ComparerViewModel(List<BaseViewModelListModel> vmList)//vmList - All searchs

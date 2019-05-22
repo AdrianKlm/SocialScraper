@@ -12,7 +12,6 @@ namespace KarScraper.Model
     public class FbScraper: PropertyChangedNotification
     {
         [Required(ErrorMessage ="Pole wymagane")]
-        //[RequiredFbUrl(ErrorMessage ="Niepoprawny adres")]
         public string UriSource
         {
             get { return GetValue(() => UriSource); }

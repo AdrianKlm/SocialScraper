@@ -76,14 +76,14 @@ namespace KarScraper.ViewModel
 
                 _temp = await _fbApi.GetRatesAsyncV2(page);
 
-                //foreach (var item in _temp)
-                //{
-                //    string instaPage = await _instaApi.GetPageAsync("https://www.instagram.com/" + item.Author.Login);
-                //    if (!instaPage.Contains("Sorry, this page"))
-                //    {
-                //        item.InstaUser = await _instaApi.GetUserInfoAsync(instaPage);
-                //    }
-                //}
+                foreach (var item in _temp)
+                {
+                    string instaPage = await _instaApi.GetPageAsync("https://www.instagram.com/" + item.Author.Login);
+                    if (!instaPage.Contains("Sorry, this page"))
+                    {
+                        item.InstaUser = await _instaApi.GetUserInfoAsync(instaPage);
+                    }
+                }
                 SrapedRatesList = _temp;
                 PrograssBarIsIndeterminate = false;
                 StatsVisibility = true;
@@ -95,11 +95,7 @@ namespace KarScraper.ViewModel
                 MessageBox.Show(ex.Message);
                 PrograssBarIsIndeterminate = false;
                 StatsVisibility = false;
-            }
-            finally
-            {
-            
-            }
+            }       
         }
 
         private Statistic GenerateStatistic(List<Rating> rateslist)
@@ -111,10 +107,7 @@ namespace KarScraper.ViewModel
                 NumberOfFemale = rateslist.Where(x => x.Author.Sex == 'K').Count(),
                 NumberOfMan = rateslist.Where(x => x.Author.Sex == 'M').Count(),
                 NumberOfIgAccount = rateslist.Where(x => x.InstaUser != null).Count(),
-                BussinesName = NewFaceBookScraper.BussinesName//TODO
-                //NumberOfInAccount = rateslist.Select(x => Int64.Parse(x.InstaUser.user?.id) > 10).Count()
-
-
+                BussinesName = NewFaceBookScraper.BussinesName     
             };
         }
 

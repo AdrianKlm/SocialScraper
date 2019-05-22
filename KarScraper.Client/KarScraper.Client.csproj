@@ -35,7 +35,7 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <PropertyGroup>
-    <ApplicationIcon>023_035_scraper_tool_512_py9_icon.ico</ApplicationIcon>
+    <ApplicationIcon>favicon.ico</ApplicationIcon>
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="MaterialDesignColors, Version=1.0.0.14576, Culture=neutral, processorArchitecture=MSIL">
@@ -85,6 +85,7 @@
     <Compile Include="Common\IBaseViewModel.cs" />
     <Compile Include="Common\PropertyChangeNotification.cs" />
     <Compile Include="Common\RelayCommand.cs" />
+    <Compile Include="Model\BaseViewModelListModel.cs" />
     <Compile Include="ViewModel\ComparerViewModel.cs" />
     <Compile Include="ViewModel\Page2ViewModel.cs" />
     <Compile Include="ViewModel\ViewModelLocator.cs" />
@@ -182,6 +183,9 @@
       <Project>{f2418c66-d0e5-43c3-ac75-f8de99c5735a}</Project>
       <Name>KarScraper.Models</Name>
     </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="favicon.ico" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

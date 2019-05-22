@@ -78,11 +78,7 @@
                     <WrapPanel Grid.Column="2" Grid.Row="0"  Margin="20,0">
                         <Label Content="L. dopasowanych kont IG:" />
                         <Label Content="{Binding NumberOfIgAccount}"/>
-                    </WrapPanel>
-                    <WrapPanel Grid.Column="2" Grid.Row="1"  Margin="20,0">
-                        <Label Content="L. dopasowanych kont in:" />
-                        <Label Content="{Binding NumberOfInAccount}"/>
-                    </WrapPanel>
+                    </WrapPanel>               
                 </Grid> 
             </GroupBox>
         </StackPanel>  
@@ -114,7 +110,7 @@
                 <DataGridTextColumn Header="Nazwisko" Binding="{Binding Author.LastName}" />
                 <DataGridTextColumn Header="Płeć" Binding="{Binding Author.Sex}" />
                 <DataGridTextColumn Header="Ocena" Binding="{Binding ReviewRating.RatingValue}" />
-                <DataGridTextColumn Header="Data"  Binding="{Binding DatePublishedStr}" />
+                <DataGridTextColumn Header="Data"  Binding="{Binding DatePublishedDt, StringFormat=dd.MM.yyyy}" />
                 <DataGridTemplateColumn Header="Social Media">
                     <DataGridTemplateColumn.CellTemplate>
                         <DataTemplate>
@@ -125,14 +121,11 @@
                                 <Button Content="IG" Height="20" Width="20" Padding="3"  Margin="5,0" 
                                         IsEnabled="{Binding InstaUser, Converter={StaticResource IsNullToBoolConverter}}" 
                                         Command="{Binding RelativeSource={RelativeSource FindAncestor, AncestorType={x:Type UserControl}}, Path=DataContext.OpenInstaCommand}" 
-                                        CommandParameter="{Binding}" />
-                                <Button Content="in" Height="20" Width="20" Padding="3"  Margin="5,0" IsEnabled="False"/>
+                                        CommandParameter="{Binding}" />                              
                             </WrapPanel>
                         </DataTemplate>
                     </DataGridTemplateColumn.CellTemplate>
                 </DataGridTemplateColumn>
-                
-                <DataGridTextColumn Width="*" />
             </DataGrid.Columns>
         </DataGrid>    
     </Grid>

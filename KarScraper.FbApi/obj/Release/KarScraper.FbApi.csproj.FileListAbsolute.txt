@@ -111,3 +111,5 @@ C:\Users\Adrian\Source\Repos\KarScraper\KarScraper.FbApi\obj\Release\KarScraperF
 C:\Users\Adrian\Source\Repos\KarScraper\KarScraper.FbApi\obj\Release\KarScraperFbApi.pdb
 C:\Users\Adrian\Source\Repos\KarScraper\KarScraper.FbApi\bin\Release\FbScraper.Models.dll
 C:\Users\Adrian\Source\Repos\KarScraper\KarScraper.FbApi\bin\Release\FbScraper.Models.pdb
+C:\Users\Adrian\Source\Repos\KarScraper\KarScraper.FbApi\bin\Release\FbScraper.Common.dll
+C:\Users\Adrian\Source\Repos\KarScraper\KarScraper.FbApi\bin\Release\FbScraper.Common.pdb

@@ -9,3 +9,5 @@ C:\Users\Adrian\Source\Repos\KarScraper\KarScraper.InstaApi\obj\Release\KarScrap
 C:\Users\Adrian\Source\Repos\KarScraper\KarScraper.InstaApi\obj\Release\KarScraper.InstaApi.csproj.CopyComplete
 C:\Users\Adrian\Source\Repos\KarScraper\KarScraper.InstaApi\obj\Release\KarScraper.InstaApi.dll
 C:\Users\Adrian\Source\Repos\KarScraper\KarScraper.InstaApi\obj\Release\KarScraper.InstaApi.pdb
+C:\Users\Adrian\Source\Repos\KarScraper\KarScraper.InstaApi\bin\Release\FbScraper.Common.dll
+C:\Users\Adrian\Source\Repos\KarScraper\KarScraper.InstaApi\bin\Release\FbScraper.Common.pdb

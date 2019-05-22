@@ -14,7 +14,7 @@ namespace FbScraper.Model
         public string DatePublishedStr { get; set; }
         public DateTime DatePublishedDt
         {
-            get => DateTime.MinValue;// Common.Converters.TimeConverters.UnixTimeStampToDateTime((int)DatePublished);           
+            get => Common.Converters.TimeConverters.StringToDateTime(DatePublishedStr);     
         }
         public string Description { get; set; }
         public ReviewRating ReviewRating { get; set; }
